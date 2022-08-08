@@ -1,0 +1,6 @@
+name=ExampleMod
+author=SharpDev
+description=Example mod for my SNKRX modloader! Adds a new healing unit called the Bishop!
+website=https://github.com/sharpdev-me/SNKMD
+version=1.0
+main=main.lua
