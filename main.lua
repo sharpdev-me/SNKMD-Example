@@ -1,9 +1,12 @@
 -- Add a new hero (unit)
 local bishop = createHero{
   name = "bishop",
-  classes = {"healer","enchanter","sorcerer"},
+  classes = {"healer"},
   tier = 3,
-  description = "[fg]Heal [yellow]20% [fg]of a unit's [green]max health [fg]in an area around this unit."
+  -- description = "[fg]Heal [yellow]20% [fg]of a unit's [green]max health [fg]in an area around this unit."
+  description = function(self, level)
+    return "[fg]Heal [yellow]" .. 5 * level .. "% [green]max health [fg]of the units around itself."
+  end
 }
 
 
